@@ -1,0 +1,28 @@
+<html>
+    <script>
+        function calculo(operacao, num1, num2) {
+            var resultado;//inicio a variavel sem valor pra atribuir o valor para ela depois
+            
+            if (operacao === 'soma'){
+                resuldado = num1 + num2;
+            }else if (operacao === 'subtracao'){
+                resultado = num1 - num2;
+            }else if (operacao === 'multiplicacao') {
+                resultado = num1 * num2;
+            }else if (operacao === 'divisao') {
+                resultado = num1 / num2;
+            }else if (operacao === 'resto') {
+                resultado = num1 % num2;
+            }else if (operacao === 'porcentagem') {
+                resultado = num1 * num2 / 100;
+            }else {
+            console.log('operacao invalida');
+            }
+
+            return resultado;
+            }
+
+        console.log(calculo('soma', 1, 2));
+
+    </script>
+</html>
